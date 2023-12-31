@@ -11,42 +11,52 @@ import org.eclipse.microprofile.context.ManagedExecutor;
 import io.quarkiverse.langchain4j.ChatMemoryRemover;
 
 @ServerEndpoint("/chatbot")
-public class ChatBotWebSocket {
+public class ChatBotWebSocket
+{
 
-    @Inject
-    Bot bot;
+	@Inject
+	Bot bot;
 
-    @Inject
-    ManagedExecutor managedExecutor;
+	@Inject
+	ManagedExecutor managedExecutor;
 
-    @OnOpen
-    public void onOpen(Session session) {
-        managedExecutor.execute(() -> {
-            String response = bot.chat(session, "hello");
-            try {
-                session.getBasicRemote().sendText(response);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-    }
+	@OnOpen
+	public void onOpen(Session session)
+	{
+		managedExecutor.execute(() -> {
+			String response = bot.chat(session, "hello");
+			try
+			{
+				session.getBasicRemote().sendText(response);
+			}
+			catch (IOException e)
+			{
+				throw new RuntimeException(e);
+			}
+		});
+	}
 
-    @OnClose
-    void onClose(Session session) {
-        ChatMemoryRemover.remove(bot, session);
-    }
+	@OnClose
+	void onClose(Session session)
+	{
+		ChatMemoryRemover.remove(bot, session);
+	}
 
-    @OnMessage
-    public void onMessage(String message, Session session) {
-        managedExecutor.execute(() -> {
-            String response = bot.chat(session, message);
-            try {
-                session.getBasicRemote().sendText(response);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
+	@OnMessage
+	public void onMessage(String message, Session session)
+	{
+		managedExecutor.execute(() -> {
+			String response = bot.chat(session, message);
+			try
+			{
+				session.getBasicRemote().sendText(response);
+			}
+			catch (IOException e)
+			{
+				throw new RuntimeException(e);
+			}
+		});
 
-    }
+	}
 
 }
