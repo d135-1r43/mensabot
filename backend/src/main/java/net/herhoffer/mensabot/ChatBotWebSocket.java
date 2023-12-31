@@ -1,19 +1,19 @@
-package io.quarkiverse.langchain4j.sample.chatbot;
-
-import java.io.IOException;
-
-import jakarta.inject.Inject;
-import jakarta.websocket.*;
-import jakarta.websocket.server.ServerEndpoint;
-
-import org.eclipse.microprofile.context.ManagedExecutor;
+package net.herhoffer.mensabot;
 
 import io.quarkiverse.langchain4j.ChatMemoryRemover;
+import jakarta.inject.Inject;
+import jakarta.websocket.OnClose;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.OnOpen;
+import jakarta.websocket.Session;
+import jakarta.websocket.server.ServerEndpoint;
+import org.eclipse.microprofile.context.ManagedExecutor;
+
+import java.io.IOException;
 
 @ServerEndpoint("/chatbot")
 public class ChatBotWebSocket
 {
-
 	@Inject
 	Bot bot;
 
@@ -56,7 +56,5 @@ public class ChatBotWebSocket
 				throw new RuntimeException(e);
 			}
 		});
-
 	}
-
 }

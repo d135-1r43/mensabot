@@ -1,4 +1,4 @@
-package io.quarkiverse.langchain4j.sample.chatbot;
+package net.herhoffer.mensabot;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
