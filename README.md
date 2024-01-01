@@ -54,7 +54,7 @@ The application, packaged as an _über-jar_, is now runnable using `java -jar ta
 
 You can create a native executable using:
 Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/mensabot-$version-runner`
 
 If you want to learn more about building native executables, please
 consult [Quarkus Maven tooling guide](https://quarkus.io/guides/maven-tooling).
