@@ -15,7 +15,7 @@ import java.io.IOException;
 public class ChatBotWebSocket
 {
 	@Inject
-	Bot bot;
+	CanteenBot mensaBot;
 
 	@Inject
 	ManagedExecutor managedExecutor;
@@ -24,7 +24,7 @@ public class ChatBotWebSocket
 	public void onOpen(Session session)
 	{
 		managedExecutor.execute(() -> {
-			String response = bot.chat(session, "hello");
+			String response = mensaBot.chat(session, "hello");
 			try
 			{
 				session.getBasicRemote().sendText(response);
@@ -39,14 +39,14 @@ public class ChatBotWebSocket
 	@OnClose
 	void onClose(Session session)
 	{
-		ChatMemoryRemover.remove(bot, session);
+		ChatMemoryRemover.remove(mensaBot, session);
 	}
 
 	@OnMessage
 	public void onMessage(String message, Session session)
 	{
 		managedExecutor.execute(() -> {
-			String response = bot.chat(session, message);
+			String response = mensaBot.chat(session, message);
 			try
 			{
 				session.getBasicRemote().sendText(response);

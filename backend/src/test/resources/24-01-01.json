@@ -1,0 +1,948 @@
+[
+  {
+    "timestamp": "2024-01-08",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Schupfnudeln mit Tomaten und Hirtenkäse",
+          "en": "Schupfnudeln with tomatoes and shepherd's cheese"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.88,
+          "employee": 4.13,
+          "guest": 5.76
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": 3894,
+          "kcal": 930,
+          "fat": 28.7,
+          "fatSaturated": 13.3,
+          "carbs": 127.9,
+          "sugar": 23.6,
+          "fiber": 13.9,
+          "protein": 33.4,
+          "salt": 9.2
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Burger Chicken-Cheese mit Cocktailsoße",
+          "en": "Chicken cheese burger with cocktail sauce"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 4.6,
+          "employee": 5.8,
+          "guest": 9.2
+        },
+        "allergens": [
+          "1",
+          "Wz",
+          "Ei",
+          "So",
+          "Mi",
+          "Ses",
+          "Ge",
+          "5",
+          "7",
+          "9",
+          "Sen",
+          "Su"
+        ],
+        "flags": [
+          "G"
+        ],
+        "nutrition": {
+          "kj": 3492,
+          "kcal": 834,
+          "fat": 40.5,
+          "fatSaturated": 5.2,
+          "carbs": 93.2,
+          "sugar": 17.1,
+          "fiber": 3.4,
+          "protein": 31.9,
+          "salt": 5
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Möhrencurry auf Erbsenpüree mit geröstetem Sesam",
+          "en": "Carrot curry on pea puree with roasted sesame seeds"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 3.12,
+          "employee": 4.32,
+          "guest": 6.24
+        },
+        "allergens": [
+          "1",
+          "Gf",
+          "So",
+          "Ses"
+        ],
+        "flags": [
+          "Gf",
+          "veg"
+        ],
+        "nutrition": {
+          "kj": 3726,
+          "kcal": 890,
+          "fat": 58.8,
+          "fatSaturated": 21.9,
+          "carbs": 68.9,
+          "sugar": 24.3,
+          "fiber": 8.2,
+          "protein": 19.4,
+          "salt": 3.4
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-09",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Pasta mit Broccoliröschen und Walnüssen",
+          "en": "Pasta with broccoli florets and walnuts"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.43,
+          "employee": 4.13,
+          "guest": 4.86
+        },
+        "allergens": [
+          "Wz",
+          "Mi",
+          "Wa"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": 2949,
+          "kcal": 704,
+          "fat": 29,
+          "fatSaturated": 3.8,
+          "carbs": 86.3,
+          "sugar": 7.6,
+          "fiber": 0.9,
+          "protein": 22,
+          "salt": 3.7
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Gulasch vom Rind mit Paprika",
+          "en": "Beef goulash with paprika"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.83,
+          "employee": 4.03,
+          "guest": 5.66
+        },
+        "allergens": [
+          "1",
+          "Wz",
+          "Mi",
+          "Ge"
+        ],
+        "flags": [
+          "R"
+        ],
+        "nutrition": {
+          "kj": 1694,
+          "kcal": 404,
+          "fat": 19.6,
+          "fatSaturated": 8,
+          "carbs": 18,
+          "sugar": 8.9,
+          "fiber": 3.1,
+          "protein": 38,
+          "salt": 1.2
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Kürbis-Zucchini-Auflauf mit Feta und Paprikarahmsoße",
+          "en": "Pumpkin and courgette casserole with feta and paprika cream sauce"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 3.91,
+          "employee": 5.11,
+          "guest": 7.82
+        },
+        "allergens": [
+          "Mi",
+          "1"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": 2239,
+          "kcal": 535,
+          "fat": 36.9,
+          "fatSaturated": 17.9,
+          "carbs": 32.1,
+          "sugar": 20.4,
+          "fiber": 2.8,
+          "protein": 14.7,
+          "salt": 5.8
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-10",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Pasta mit Gemüsebolognese",
+          "en": "Pasta with vegetable bolognese"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.43,
+          "employee": 4.13,
+          "guest": 4.86
+        },
+        "allergens": [
+          "Wz",
+          "Sel"
+        ],
+        "flags": [
+          "veg"
+        ],
+        "nutrition": {
+          "kj": 2601,
+          "kcal": 621,
+          "fat": 20.3,
+          "fatSaturated": 1.8,
+          "carbs": 89.6,
+          "sugar": 21.7,
+          "fiber": 2.9,
+          "protein": 15.3,
+          "salt": 6
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Putenschnitzel paniert mit Zitrone",
+          "en": "Breaded turkey escalope with lemon"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.95,
+          "employee": 4.15,
+          "guest": 5.9
+        },
+        "allergens": [
+          "Wz"
+        ],
+        "flags": [
+          "G"
+        ],
+        "nutrition": {
+          "kj": 2072,
+          "kcal": 495,
+          "fat": 29.8,
+          "fatSaturated": 3.5,
+          "carbs": 26.1,
+          "sugar": 2.1,
+          "fiber": 0.3,
+          "protein": 30.7,
+          "salt": 2.3
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Soja-Kokos-Curry mit roter Bete, Champignons, Bohnen und Wildreis",
+          "en": "Soya and coconut curry with beetroot, mushrooms, beans and wild rice"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.85,
+          "employee": 4.13,
+          "guest": 5.7
+        },
+        "allergens": [
+          "Gf",
+          "So",
+          "Sen"
+        ],
+        "flags": [
+          "Gf",
+          "veg",
+          "MV"
+        ],
+        "nutrition": {
+          "kj": 3521,
+          "kcal": 841,
+          "fat": 35,
+          "fatSaturated": 18.5,
+          "carbs": 95.5,
+          "sugar": 13.4,
+          "fiber": 1.8,
+          "protein": 32.2,
+          "salt": 6.9
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-11",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Nudel-Gemüse-Eintopf wahlweise mit Hühnerfleisch",
+          "en": "Noodle and vegetable stew with optional chicken"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.17,
+          "employee": 4.13,
+          "guest": 4.34
+        },
+        "allergens": [
+          "Wz",
+          "G"
+        ],
+        "flags": [
+          "G"
+        ],
+        "nutrition": {
+          "kj": 1437,
+          "kcal": 343,
+          "fat": 9.6,
+          "fatSaturated": 4.6,
+          "carbs": 49.2,
+          "sugar": 8.5,
+          "fiber": 0.9,
+          "protein": 11.2,
+          "salt": 0.6
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Schäuferle fränkische Art mit Soße",
+          "en": "Franconian-style shank with sauce"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 4.21,
+          "employee": 5.41,
+          "guest": 8.42
+        },
+        "allergens": [
+          "Wz",
+          "Sel",
+          "Ge"
+        ],
+        "flags": [
+          "S"
+        ],
+        "nutrition": {
+          "kj": 3435,
+          "kcal": 821,
+          "fat": 36.4,
+          "fatSaturated": 5.5,
+          "carbs": 12.7,
+          "sugar": 4.2,
+          "fiber": 1.2,
+          "protein": 96.9,
+          "salt": 6.9
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Mais Nuggets mit Barbecue Dip",
+          "en": "Corn nuggets with barbecue dip"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 4.89,
+          "employee": 6.09,
+          "guest": 9.78
+        },
+        "allergens": [
+          "Wz",
+          "So",
+          "Vegan",
+          "5",
+          "9",
+          "Sel",
+          "Su"
+        ],
+        "flags": [
+          "veg"
+        ],
+        "nutrition": {
+          "kj": 3541,
+          "kcal": 846,
+          "fat": 61.3,
+          "fatSaturated": 5.1,
+          "carbs": 51.6,
+          "sugar": 14,
+          "fiber": 3.1,
+          "protein": 19.9,
+          "salt": 4.6
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-12",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "MSC Schollenfilet gebacken mit Dillmayonnaise Kartoffeln",
+          "en": "MSC plaice fillet baked with dill mayonnaise potatoes"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 3.78,
+          "employee": 4.98,
+          "guest": 7.56
+        },
+        "allergens": [
+          "Wz",
+          "Fi",
+          "5",
+          "Ei",
+          "So",
+          "Mi"
+        ],
+        "flags": [
+          "MSC"
+        ],
+        "nutrition": {
+          "kj": 3263,
+          "kcal": 779,
+          "fat": 45.5,
+          "fatSaturated": 4.1,
+          "carbs": 65.6,
+          "sugar": 7.2,
+          "fiber": 0.2,
+          "protein": 24.8,
+          "salt": 1.9
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Bohnen Burrito mit Tofu-Knoblauch Dip",
+          "en": "Bean burrito with tofu and garlic dip"
+        },
+        "category": "Essen",
+        "prices": {
+          "student": 2.85,
+          "employee": 4.13,
+          "guest": 5.7
+        },
+        "allergens": [
+          "1",
+          "4",
+          "7",
+          "Wz",
+          "Sel",
+          "Sen",
+          "So"
+        ],
+        "flags": [
+          "veg"
+        ],
+        "nutrition": {
+          "kj": 3919,
+          "kcal": 936,
+          "fat": 56.7,
+          "fatSaturated": 6.9,
+          "carbs": 87.2,
+          "sugar": 23.7,
+          "fiber": 8.9,
+          "protein": 17,
+          "salt": 6.8
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-13",
+    "meals": [
+      {
+        "name": {
+          "de": "Grießnockerlsuppe",
+          "en": "Semolina dumpling soup"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 0.9,
+          "employee": 0.95,
+          "guest": 1.1
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      },
+      {
+        "name": {
+          "de": "Grießnockerlsuppe mit Brötchen",
+          "en": "Semolina dumpling soup with bread rolls"
+        },
+        "category": "Suppe",
+        "prices": {
+          "student": 1.6,
+          "employee": 2.6,
+          "guest": 3.2
+        },
+        "allergens": [
+          "Wz",
+          "Ei",
+          "Mi",
+          "Sel"
+        ],
+        "flags": [
+          "V"
+        ],
+        "nutrition": {
+          "kj": "",
+          "kcal": "",
+          "fat": "",
+          "fatSaturated": "",
+          "carbs": "",
+          "sugar": "",
+          "fiber": "",
+          "protein": "",
+          "salt": ""
+        },
+        "variations": [],
+        "originalLanguage": "de",
+        "static": false
+      }
+    ]
+  }
+]

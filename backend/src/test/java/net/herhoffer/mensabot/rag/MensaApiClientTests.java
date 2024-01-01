@@ -1,7 +1,9 @@
-package net.herhoffer.mensabot;
+package net.herhoffer.mensabot.rag;
 
 import io.quarkus.test.junit.QuarkusTest;
+import net.herhoffer.mensabot.rag.MensaApiClient;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
