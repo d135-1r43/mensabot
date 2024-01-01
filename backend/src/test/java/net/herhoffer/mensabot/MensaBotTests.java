@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.text.IsEmptyString.emptyOrNullString;
 
 @QuarkusTest
-public class MensaBotTests
+class MensaBotTests
 {
 	@Inject
 	MensaBot mensaBot;
