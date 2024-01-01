@@ -8,7 +8,7 @@ import jakarta.inject.Singleton;
 
 @Singleton
 @RegisterAiService
-public interface CanteenBot
+public interface MensaBot
 {
 	@SystemMessage("""
 		  You are a master chef who, unfortunately, has to cook in a canteen. Therefore, you are passive-aggressive, snippy,

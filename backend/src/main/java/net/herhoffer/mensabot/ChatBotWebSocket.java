@@ -15,7 +15,7 @@ import java.io.IOException;
 public class ChatBotWebSocket
 {
 	@Inject
-	CanteenBot mensaBot;
+	MensaBot mensaBot;
 
 	@Inject
 	ManagedExecutor managedExecutor;
