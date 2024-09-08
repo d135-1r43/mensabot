@@ -17,9 +17,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.6.4</quarkus.platform.version>
+        <quarkus.platform.version>3.14.2</quarkus.platform.version>
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.1.2</surefire-plugin.version>
+        <quarkus.langchain.version>0.18.0.CR1</quarkus.langchain.version>
     </properties>
 
     <dependencyManagement>
@@ -37,11 +38,11 @@
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+            <artifactId>quarkus-rest-jackson</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
+            <artifactId>quarkus-rest-client-jackson</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -52,14 +53,20 @@
             <artifactId>quarkus-smallrye-context-propagation</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
+
+        <!--AI-->
+        <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-openai</artifactId>
-            <version>0.6.0.CR2</version>
+            <artifactId>quarkus-langchain4j-ollama</artifactId>
+            <version>${quarkus.langchain.version}</version>
         </dependency>
         <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-redis</artifactId>
-            <version>0.6.0.CR2</version>
+            <artifactId>quarkus-langchain4j-chroma</artifactId>
+            <version>${quarkus.langchain.version}</version>
         </dependency>
 
         <!-- UI -->
@@ -78,7 +85,6 @@
             <groupId>org.mvnpm</groupId>
             <artifactId>es-module-shims</artifactId>
             <scope>runtime</scope>
-            <version>1.8.2</version>
         </dependency>
         <dependency>
             <groupId>org.mvnpm</groupId>
@@ -187,7 +193,8 @@
             </activation>
             <properties>
                 <skipITs>false</skipITs>
-                <quarkus.package.type>native</quarkus.package.type>
+                <quarkus.native.enabled>true</quarkus.native.enabled>
+                <quarkus.package.jar.enabled>false</quarkus.package.jar.enabled>
             </properties>
         </profile>
     </profiles>
