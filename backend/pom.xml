@@ -20,7 +20,7 @@
         <quarkus.platform.version>3.14.2</quarkus.platform.version>
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.1.2</surefire-plugin.version>
-        <quarkus.langchain.version>0.18.0.CR1</quarkus.langchain.version>
+        <quarkus.langchain.version>0.18.0</quarkus.langchain.version>
     </properties>
 
     <dependencyManagement>
@@ -60,7 +60,7 @@
         <!--AI-->
         <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-ollama</artifactId>
+            <artifactId>quarkus-langchain4j-openai</artifactId>
             <version>${quarkus.langchain.version}</version>
         </dependency>
         <dependency>
