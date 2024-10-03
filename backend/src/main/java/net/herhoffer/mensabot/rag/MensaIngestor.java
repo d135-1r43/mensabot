@@ -16,26 +16,28 @@ import org.slf4j.LoggerFactory;
 import static dev.langchain4j.data.document.splitter.DocumentSplitters.recursive;
 
 @ApplicationScoped
-public class MensaIngestor {
-    private static final Logger LOG = LoggerFactory.getLogger(MensaIngestor.class);
+public class MensaIngestor
+{
+	private static final Logger LOG = LoggerFactory.getLogger(MensaIngestor.class);
 
-    @Inject
-    ChromaEmbeddingStore store;
+	@Inject
+	ChromaEmbeddingStore store;
 
-    @Inject
-    EmbeddingModel embeddingModel;
+	@Inject
+	EmbeddingModel embeddingModel;
 
-    public void ingest(@Observes StartupEvent event) {
-        LOG.info("ingesting documents");
-        Document docs = UrlDocumentLoader.load("https://neuland.app/api/mensa/", new TextDocumentParser());
+	public void ingest(@Observes StartupEvent event)
+	{
+		LOG.info("ingesting documents");
+		Document docs = UrlDocumentLoader.load("https://neuland.app/api/mensa/", new TextDocumentParser());
 
-        EmbeddingStoreIngestor ingestor = EmbeddingStoreIngestor.builder()
-                .embeddingStore(store)
-                .embeddingModel(embeddingModel)
-                .documentSplitter(recursive(500, 0))
-                .build();
+		EmbeddingStoreIngestor ingestor = EmbeddingStoreIngestor.builder()
+			.embeddingStore(store)
+			.embeddingModel(embeddingModel)
+			.documentSplitter(recursive(500, 0))
+			.build();
 
-        ingestor.ingest(docs);
-        LOG.info("Documents successfully ingested");
-    }
+		ingestor.ingest(docs);
+		LOG.info("Documents successfully ingested");
+	}
 }

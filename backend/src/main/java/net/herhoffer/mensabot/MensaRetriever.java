@@ -10,24 +10,27 @@ import jakarta.enterprise.context.ApplicationScoped;
 import java.util.function.Supplier;
 
 @ApplicationScoped
-public class MensaRetriever implements Supplier<RetrievalAugmentor> {
+public class MensaRetriever implements Supplier<RetrievalAugmentor>
+{
 
-    private final RetrievalAugmentor augmentor;
+	private final RetrievalAugmentor augmentor;
 
-    MensaRetriever(ChromaEmbeddingStore store, EmbeddingModel model) {
-        EmbeddingStoreContentRetriever contentRetriever = EmbeddingStoreContentRetriever.builder()
-                .embeddingModel(model)
-                .embeddingStore(store)
-                .maxResults(3)
-                .build();
-        augmentor = DefaultRetrievalAugmentor
-                .builder()
-                .contentRetriever(contentRetriever)
-                .build();
-    }
+	MensaRetriever(ChromaEmbeddingStore store, EmbeddingModel model)
+	{
+		EmbeddingStoreContentRetriever contentRetriever = EmbeddingStoreContentRetriever.builder()
+			.embeddingModel(model)
+			.embeddingStore(store)
+			.maxResults(3)
+			.build();
+		augmentor = DefaultRetrievalAugmentor
+			.builder()
+			.contentRetriever(contentRetriever)
+			.build();
+	}
 
-    @Override
-    public RetrievalAugmentor get() {
-        return augmentor;
-    }
+	@Override
+	public RetrievalAugmentor get()
+	{
+		return augmentor;
+	}
 }

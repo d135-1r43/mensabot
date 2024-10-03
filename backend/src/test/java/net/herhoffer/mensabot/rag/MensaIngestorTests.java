@@ -10,24 +10,27 @@ import org.junit.jupiter.api.Test;
 
 @QuarkusTest
 @Disabled
-class MensaIngestorTests {
-    @Inject
-    MensaIngestor mensaIngestor;
+class MensaIngestorTests
+{
+	@Inject
+	MensaIngestor mensaIngestor;
 
-    @Inject
-    EmbeddingModel embeddingModel;
+	@Inject
+	EmbeddingModel embeddingModel;
 
-    @Inject
-    ChromaEmbeddingStore store;
+	@Inject
+	ChromaEmbeddingStore store;
 
-    @Test
-    void shouldIngestAsDocument() {
-        // when
-        mensaIngestor.ingest(null);
+	@Test
+	void shouldIngestAsDocument()
+	{
+		// when
+		mensaIngestor.ingest(null);
 
-        // then
-        Embedding embeddedText = embeddingModel.embed("meal").content();
-        // List<EmbeddingMatch<TextSegment>> matches = store.findRelevant(embeddedText, 10);
-        // assertThat(matches, not(empty()));
-    }
+		// then
+		Embedding embeddedText = embeddingModel.embed("meal").content();
+		// List<EmbeddingMatch<TextSegment>> matches =
+		// store.findRelevant(embeddedText, 10);
+		// assertThat(matches, not(empty()));
+	}
 }
