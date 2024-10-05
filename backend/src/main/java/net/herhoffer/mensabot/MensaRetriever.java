@@ -1,27 +1,36 @@
 package net.herhoffer.mensabot;
 
-import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.retriever.EmbeddingStoreRetriever;
-import dev.langchain4j.retriever.Retriever;
-import io.quarkiverse.langchain4j.redis.RedisEmbeddingStore;
+import dev.langchain4j.rag.DefaultRetrievalAugmentor;
+import dev.langchain4j.rag.RetrievalAugmentor;
+import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
+import io.quarkiverse.langchain4j.chroma.ChromaEmbeddingStore;
 import jakarta.enterprise.context.ApplicationScoped;
 
-import java.util.List;
+import java.util.function.Supplier;
 
 @ApplicationScoped
-public class MensaRetriever implements Retriever<TextSegment>
+public class MensaRetriever implements Supplier<RetrievalAugmentor>
 {
-	private final EmbeddingStoreRetriever retriever;
 
-	MensaRetriever(RedisEmbeddingStore store, EmbeddingModel model)
+	private final RetrievalAugmentor augmentor;
+
+	MensaRetriever(ChromaEmbeddingStore store, EmbeddingModel model)
 	{
-		retriever = EmbeddingStoreRetriever.from(store, model, 20);
+		EmbeddingStoreContentRetriever contentRetriever = EmbeddingStoreContentRetriever.builder()
+			.embeddingModel(model)
+			.embeddingStore(store)
+			.maxResults(3)
+			.build();
+		augmentor = DefaultRetrievalAugmentor
+			.builder()
+			.contentRetriever(contentRetriever)
+			.build();
 	}
 
 	@Override
-	public List<TextSegment> findRelevant(String s)
+	public RetrievalAugmentor get()
 	{
-		return retriever.findRelevant(s);
+		return augmentor;
 	}
 }

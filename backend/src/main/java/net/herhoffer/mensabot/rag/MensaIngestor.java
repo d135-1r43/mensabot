@@ -1,21 +1,17 @@
 package net.herhoffer.mensabot.rag;
 
 import dev.langchain4j.data.document.Document;
-import dev.langchain4j.data.document.loader.FileSystemDocumentLoader;
 import dev.langchain4j.data.document.loader.UrlDocumentLoader;
 import dev.langchain4j.data.document.parser.TextDocumentParser;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
-import io.quarkiverse.langchain4j.redis.RedisEmbeddingStore;
+import io.quarkiverse.langchain4j.chroma.ChromaEmbeddingStore;
 import io.quarkus.runtime.StartupEvent;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.File;
-import java.util.List;
 
 import static dev.langchain4j.data.document.splitter.DocumentSplitters.recursive;
 
@@ -25,7 +21,7 @@ public class MensaIngestor
 	private static final Logger LOG = LoggerFactory.getLogger(MensaIngestor.class);
 
 	@Inject
-	RedisEmbeddingStore store;
+	ChromaEmbeddingStore store;
 
 	@Inject
 	EmbeddingModel embeddingModel;
